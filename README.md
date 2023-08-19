@@ -1,0 +1,1 @@
+# apk-secret-scanner
