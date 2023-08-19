@@ -24,14 +24,18 @@ This script automates the process of decompiling APK files and scanning for hard
    git clone https://github.com/abhi-recon/apk-secret-scanner.git
    cd apk-secret-scanner
 Run the script with an APK file as a command-line argument:
+   ```bash
+   python scanner.py path/to/your.apk
+   ```
+#To enable verbose output, use the --verbose 
 
-python apk_decompiler.py path/to/your.apk
-To enable verbose output, use the --verbose flag:
+flag:
+python scanner.py path/to/your.apk --verbose
 
-python apk_decompiler.py path/to/your.apk --verbose
 Dependencies
 Python 3.6 or later
 jadx tool (Ensure it's available in your system's PATH)
+
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
