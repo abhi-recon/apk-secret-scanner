@@ -61,7 +61,7 @@ def scan_for_secrets(output_dir, verbose=False):
         for filename in files:
             if filename.endswith('.xml'):
                 full_path = os.path.join(root, filename)
-                with open(full_path, 'r') as f:
+                with open(full_path, 'r', encoding="utf-8") as f:
                     lines = f.readlines()
                     content = ''.join(lines)
                     for key, pattern in regex.items():
